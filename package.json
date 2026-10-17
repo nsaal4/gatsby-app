@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "audit:fix": "npm audit fix --force"
   },
   "dependencies": {
     "gatsby": "^5.16.1",
@@ -25,5 +26,12 @@
   },
   "devDependencies": {
     "gatsby-plugin-webpack-bundle-analyser-v2": "^3.0.0"
+  },
+  "overrides": {
+    "proxy-addr": "^6.0.1",
+    "sharp": "^0.32.0",
+    "braces": "^3.0.2",
+    "brace-expansion": "^1.1.11",
+    "webpack-dev-middleware": "^5.3.0"
   }
 }
